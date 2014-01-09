@@ -16,12 +16,7 @@
 ;; required because of a package.el bug
 (setq url-http-attempt-keepalives nil)
 
-(defvar my-packages '(expand-region gist helm helm-projectile magit magithub melpa
-                      rainbow-mode volatile-highlights htmlize highlight-symbol
-                      evil hippie-expand-slime ac-slime solarized-theme
-	 	                  highlight-indentation rainbow-delimiters auto-complete smart-tab diminish
-                      paredit color-theme-sanityinc-solarized fill-column-indicator shen-mode
-                      nrepl lua-mode))
+(defvar my-packages '(evil paredit fill-column-indicator))
 
 (defun my-packages-installed-p ()
   (loop for p in my-packages
