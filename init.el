@@ -16,7 +16,7 @@
 ;; required because of a package.el bug
 (setq url-http-attempt-keepalives nil)
 
-(defvar my-packages '(evil paredit fill-column-indicator))
+(defvar my-packages '(evil paredit fill-column-indicator ensime))
 
 (defun my-packages-installed-p ()
   (loop for p in my-packages
